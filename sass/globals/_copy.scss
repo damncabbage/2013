@@ -1,0 +1,31 @@
+// Use @extend .copy-styles; to have everything inside a block act like page copy,
+// eg. hoverable default coloured links, lists with bullets, etc.
+//
+// .blurb {
+//   @extend .copy-styles;
+//   /* ... other styles ... */
+// }
+//
+
+.copy-styles {
+  // Extend from all the pieces
+  a { @extend .copy-link-styles; }
+}
+
+
+// You can also extend any of the following piecemeal, eg.
+//
+// .featuring a {
+//   @extend .copy-link-styles;
+// }
+//
+
+.copy-link-styles {
+  color: $feature-color;
+  font-style: normal;
+  text-decoration: none;
+
+  &:hover, &:active {
+    text-decoration: underline;
+  }
+}

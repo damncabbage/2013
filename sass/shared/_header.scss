@@ -1,23 +1,36 @@
 
 header.site {
   @include clearfix;
-  min-height: 250px;
   padding-top: 20px;
 
+  min-height: 250px;
   background-size: auto 270px;
+  @media only screen and (max-width: 500px) {
+    min-height: 180px;
+    background-size: auto 180px;
+  }
+
   background: #000 image-url('header/photo_bg10.jpg') fixed top center no-repeat;
   a {
     display: block;
     color: $inverse-text-color;
   }
 
-  h1 { @include replace-text-with-dimensions('header/logo.png'); }
+  h1 {
+    @include replace-text-with-dimensions('header/logo.png');
+    background-position: top left;
+    @media only screen and (max-width: 500px) { @include replace-text-with-dimensions('header/logo_small.png'); }
+  }
   h2 {
-    line-height: 0.7; 
     font-size: ms(4);
+    line-height: 0.7; 
     @media only screen and (max-width: 500px) { font-size: ms(1); }
   }
-  h3 { font-size: ms(2); line-height: 0.7; }
+  h3 {
+    font-size: ms(2);
+    line-height: 0.7;
+    @media only screen and (max-width: 500px) { font-size: 21px; }
+  }
 }
 
 navigation.site {
@@ -41,5 +54,7 @@ navigation.site {
     color: $inverse-text-color;
     font-size: ms(2);
     padding: 8px 0;
+
+    @media only screen and (max-width: 500px) { font-size: 20px; line-height: 1.2; }
   }
 }

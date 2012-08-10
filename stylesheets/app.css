@@ -1,3 +1,14 @@
+/* line 23, ../sass/globals/_copy.scss */
+.copy-link-styles, .copy-styles a, .home .blurb a {
+  color: #0e8dd0;
+  font-style: normal;
+  text-decoration: none;
+}
+/* line 28, ../sass/globals/_copy.scss */
+.copy-link-styles:hover, .copy-styles a:hover, .home .blurb a:hover, .copy-link-styles:active, .copy-styles a:active, .home .blurb a:active {
+  text-decoration: underline;
+}
+
 /* Requires: normalize.css */
 /* Global Reset & Standards ---------------------- */
 /* line 5, ../vendor/bundler/gems/zurb-foundation-3.0.7/stylesheets/foundation/common/_globals.scss */
@@ -4304,8 +4315,8 @@ p.vevent abbr {
 /* line 2, ../sass/shared/_header.scss */
 header.site {
   *zoom: 1;
-  min-height: 250px;
   padding-top: 20px;
+  min-height: 250px;
   background-size: auto 270px;
   background: black url('/images/header/photo_bg10.jpg?1344047301') fixed top center no-repeat;
 }
@@ -4318,12 +4329,19 @@ header.site:before, header.site:after {
 header.site:after {
   clear: both;
 }
-/* line 9, ../sass/shared/_header.scss */
+@media only screen and (max-width: 500px) {
+  /* line 2, ../sass/shared/_header.scss */
+  header.site {
+    min-height: 180px;
+    background-size: auto 180px;
+  }
+}
+/* line 14, ../sass/shared/_header.scss */
 header.site a {
   display: block;
   color: white;
 }
-/* line 14, ../sass/shared/_header.scss */
+/* line 19, ../sass/shared/_header.scss */
 header.site h1 {
   text-indent: -119988px;
   overflow: hidden;
@@ -4333,25 +4351,45 @@ header.site h1 {
   background-position: 50% 50%;
   width: 365px;
   height: 60px;
-}
-/* line 15, ../sass/shared/_header.scss */
-header.site h2 {
-  line-height: 0.7;
-  font-size: 37px;
+  background-position: top left;
 }
 @media only screen and (max-width: 500px) {
-  /* line 15, ../sass/shared/_header.scss */
+  /* line 19, ../sass/shared/_header.scss */
+  header.site h1 {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('/images/header/logo_small.png?1344615678');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 290px;
+    height: 48px;
+  }
+}
+/* line 24, ../sass/shared/_header.scss */
+header.site h2 {
+  font-size: 37px;
+  line-height: 0.7;
+}
+@media only screen and (max-width: 500px) {
+  /* line 24, ../sass/shared/_header.scss */
   header.site h2 {
     font-size: 17px;
   }
 }
-/* line 20, ../sass/shared/_header.scss */
+/* line 29, ../sass/shared/_header.scss */
 header.site h3 {
   font-size: 23px;
   line-height: 0.7;
 }
+@media only screen and (max-width: 500px) {
+  /* line 29, ../sass/shared/_header.scss */
+  header.site h3 {
+    font-size: 21px;
+  }
+}
 
-/* line 23, ../sass/shared/_header.scss */
+/* line 36, ../sass/shared/_header.scss */
 navigation.site {
   *zoom: 1;
   display: block;
@@ -4367,17 +4405,17 @@ navigation.site:before, navigation.site:after {
 navigation.site:after {
   clear: both;
 }
-/* line 30, ../sass/shared/_header.scss */
+/* line 43, ../sass/shared/_header.scss */
 navigation.site ul {
   display: block;
   list-style: none;
 }
-/* line 34, ../sass/shared/_header.scss */
+/* line 47, ../sass/shared/_header.scss */
 navigation.site li {
   display: block;
   list-style: none;
 }
-/* line 38, ../sass/shared/_header.scss */
+/* line 51, ../sass/shared/_header.scss */
 navigation.site a {
   display: block;
   text-align: center;
@@ -4385,13 +4423,20 @@ navigation.site a {
   font-size: 23px;
   padding: 8px 0;
 }
+@media only screen and (max-width: 500px) {
+  /* line 51, ../sass/shared/_header.scss */
+  navigation.site a {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
 
 /* line 4, ../sass/sections/_home.scss */
 .home .blurb {
   margin: 15px 0 35px;
   text-align: justify;
-  font-size: 23px;
-  line-height: 1.2;
+  font-size: 20px;
+  line-height: 1.3;
 }
 @media only screen and (max-width: 500px) {
   /* line 4, ../sass/sections/_home.scss */
@@ -4399,19 +4444,69 @@ navigation.site a {
     font-size: 17px;
   }
 }
-/* line 13, ../sass/sections/_home.scss */
-.home .blurb em {
-  color: #0e8dd0;
-}
 /* line 17, ../sass/sections/_home.scss */
 .home .news h1 {
   font-size: 37px;
+  margin-left: -2px;
 }
-/* line 21, ../sass/sections/_home.scss */
+@media only screen and (max-width: 500px) {
+  /* line 17, ../sass/sections/_home.scss */
+  .home .news h1 {
+    font-size: 27px;
+  }
+}
+/* line 23, ../sass/sections/_home.scss */
+.home .featuring {
+  display: block;
+}
+/* line 26, ../sass/sections/_home.scss */
 .home .featuring h1 {
   font-size: 37px;
+  margin-left: -2px;
 }
-/* line 22, ../sass/sections/_home.scss */
+@media only screen and (max-width: 500px) {
+  /* line 26, ../sass/sections/_home.scss */
+  .home .featuring h1 {
+    font-size: 27px;
+  }
+}
+/* line 30, ../sass/sections/_home.scss */
 .home .featuring ul {
   list-style: none;
+}
+/* line 32, ../sass/sections/_home.scss */
+.home .featuring a {
+  display: block;
+  color: #0e8dd0;
+}
+@media only screen and (max-width: 500px) {
+  /* line 32, ../sass/sections/_home.scss */
+  .home .featuring a {
+    padding-bottom: 20px;
+  }
+}
+/* line 37, ../sass/sections/_home.scss */
+.home .featuring a:hover, .home .featuring a:active {
+  color: #0e8dd0;
+}
+/* line 39, ../sass/sections/_home.scss */
+.home .featuring a h2 {
+  font-size: 23px;
+  margin: 0 0 5px -2px;
+  line-height: 1;
+}
+/* line 41, ../sass/sections/_home.scss */
+.home .featuring a h2:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 500px) {
+  /* line 39, ../sass/sections/_home.scss */
+  .home .featuring a h2 {
+    margin-top: 5px;
+  }
+}
+/* line 44, ../sass/sections/_home.scss */
+.home .featuring a p {
+  color: #363231;
+  line-height: 1.3;
 }
