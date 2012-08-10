@@ -1,0 +1,45 @@
+
+header.site {
+  @include clearfix;
+  min-height: 250px;
+  padding-top: 20px;
+
+  background-size: auto 270px;
+  background: #000 image-url('header/photo_bg10.jpg') fixed top center no-repeat;
+  a {
+    display: block;
+    color: $inverse-text-color;
+  }
+
+  h1 { @include replace-text-with-dimensions('header/logo.png'); }
+  h2 {
+    line-height: 0.7; 
+    font-size: ms(4);
+    @media only screen and (max-width: 500px) { font-size: ms(1); }
+  }
+  h3 { font-size: ms(2); line-height: 0.7; }
+}
+
+navigation.site {
+  @include clearfix;
+
+  display: block;
+  margin-bottom: 25px;
+  background: $brand-color image-url('header/grunge_texture_overlay_light_small.png') fixed;
+
+  ul {
+    display: block;
+    list-style: none;
+  }
+  li {
+    display: block;
+    list-style: none;
+  }
+  a {
+    display: block;
+    text-align: center;
+    color: $inverse-text-color;
+    font-size: ms(2);
+    padding: 8px 0;
+  }
+}

@@ -1,0 +1,24 @@
+
+.home {
+
+  .blurb {
+    margin: 15px 0 35px;
+    text-align: justify;
+
+    font-size: ms(2); line-height: 1.2;
+    @media only screen and (max-width: 500px) {
+      font-size: ms(1);
+    }
+
+    em { color: $feature-color; }
+  }
+
+  .news {
+    h1 { font-size: ms(4); }
+  }
+
+  .featuring {
+    h1 { font-size: ms(4); }
+    ul { list-style: none; }
+  }
+}

@@ -10,11 +10,8 @@
 // Framework
 @import "foundation";
 
-// @import "foundation/components/modules/buttons";
-// @import "foundation/components/modules/tabs";
-// @import "foundation/components/modules/ui";
-// @import "foundation/components/modules/navbar";
-// @import "foundation/components/modules/orbit";
-// @import "foundation/components/modules/reveal";
-// @import "foundation/components/modules/offcanvas";
+// Shared Elements
+@import "shared/header";
 
+// Sections
+@import "sections/home";
