@@ -4447,12 +4447,12 @@ navigation.site a {
 /* line 17, ../sass/sections/_home.scss */
 .home .news h1 {
   font-size: 37px;
-  margin-left: -2px;
 }
 @media only screen and (max-width: 500px) {
   /* line 17, ../sass/sections/_home.scss */
   .home .news h1 {
     font-size: 27px;
+    margin-left: -2px;
   }
 }
 /* line 23, ../sass/sections/_home.scss */

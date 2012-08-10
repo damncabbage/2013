@@ -15,8 +15,8 @@
 
   .news {
     h1 {
-      font-size: ms(4); margin-left: -2px;
-      @media only screen and (max-width: 500px) { font-size: ms(3); }
+      font-size: ms(4);
+      @media only screen and (max-width: 500px) { font-size: ms(3); margin-left: -2px; }
     }
   }
 
