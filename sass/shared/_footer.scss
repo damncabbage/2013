@@ -3,6 +3,26 @@ body {
 }
 
 footer.site {
+  padding-top: 25px;
+  color: #eee;
 
+  section.sponsors {
+    padding-bottom: 15px;
 
+    h1 { font-size: ms(1); }
+    @include horizontal-centered-list(ul);
+    li {
+      list-style: none;
+      padding: 0 20px;
+      a {
+        display: block;
+        @include replace-text-with-dimensions('sponsors/madman.png');
+      }
+    }
+  }
+
+  section.legal {
+    p { font-size: 10px; }
+  }
 }
+
