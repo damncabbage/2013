@@ -1,18 +1,18 @@
-// Globally-useful helpers
-@import "globals/variables";
-@import "globals/copy";
-
-// Library Functions
-@import "compass/utilities";
-
 // Custom settings to override Foundation defaults
+@import "globals/variables";
 @import "zurb_settings";
 
 // Framework
 @import "foundation";
+@import "compass/utilities";
+
+// Globally-useful helpers
+@import "globals/copy";
 
 // Shared Elements
+@import "shared/body";
 @import "shared/header";
+@import "shared/footer";
 
 // Sections
 @import "sections/home";
