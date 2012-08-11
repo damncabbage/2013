@@ -3768,7 +3768,7 @@ footer.site {
   color: #eee;
 }
 footer.site section.sponsors {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   overflow: hidden;
 }
 footer.site section.sponsors h1 {
@@ -3839,14 +3839,12 @@ footer.site section.legal p {
 .home .featuring ul {
   list-style: none;
 }
+.home .featuring li {
+  padding-bottom: 12px;
+}
 .home .featuring a {
   display: block;
   color: #0e8dd0;
-}
-@media only screen and (max-width: 500px) {
-  .home .featuring a {
-    padding-bottom: 20px;
-  }
 }
 .home .featuring a:hover, .home .featuring a:active {
   color: #0e8dd0;
@@ -3867,4 +3865,5 @@ footer.site section.legal p {
 .home .featuring a p {
   color: #363231;
   line-height: 1.3;
+  margin-bottom: 0;
 }
